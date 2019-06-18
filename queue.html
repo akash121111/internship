@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+    var arrayval=[1,2, "akash"];
+    function add(){
+      
+var n=document.getElementById("v1").value;
+arrayval.push(n);
+show();
+
+
+    }
+    function pop(){
+      
+
+arrayval.pop();
+show();
+
+
+    }
+    function show(){
+document.getElementById("prin").innerHTML=arrayval;
+    }
+    
+  </script>
+</head>
+<body onload="show()">
+
+  <p id="prin" ></p>
+
+give me input<input type="text" id="v1">
+<button onclick="add()">push</button><br>
+<button onclick="pop()">pop</button><br>
+
+
+</body>
+</html>
